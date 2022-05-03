@@ -24,6 +24,8 @@ $f3->route('GET /', function($f3)
     $f3->set('radius', 10);
     //array test
     $f3->set('fruits', array('orange', ' banana', 'apple '));
+    //associative array
+    $f3->set('addresses', array('primary' => '1000 Summer Ln Auburn, WA 98002', 'secondary' => '2510 Apple Ln Seattle, WA 98999'));
 
     //display a template
     $view = new Template();

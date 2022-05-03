@@ -16,12 +16,17 @@
     <p>Try it 1: I like {{ @color }}</p>
     <p>Try it 2: Circumference is {{ round (2*pi()* @radius, 3) }}</p>
 
-    <h2>Fave Fruits test:</h2>
+    <h2>Fave Fruits array test:</h2>
     <ul>
     <repeat group="{{ @fruits }}" value="{{ @fruit }}">
         <li>{{ trim(@fruit) }}</li>
     </repeat>
     </ul>
+
+    <h2>Associative Array test:</h2>
+    <h4>Addresses:</h4>
+    <p>{{ @addresses['primary'] }}</p>
+    <p>{{ @addresses['secondary'] }}</p>
 
 </div>
 
