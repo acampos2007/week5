@@ -1,0 +1,15 @@
+{
+  "name": "acamposg/328sdev/week5",
+  "authors":
+  [
+    {
+      "name": "Angel Campos",
+      "email": "campos.angel@student.greenriver.edu"
+    }
+  ],
+  "require":
+  {
+    "bcosca/fatfree-core": "dev-master"
+  }
+
+}
