@@ -12,12 +12,26 @@ $f3 = Base::instance();
 //echo gettype($f3);
 
 //Define a default route
-$f3->route('GET /', function()
+$f3->route('GET /', function($f3)
 {
+    //Add variables to the f3 hive
+    $f3->set('username', 'jshmo');
+    $f3->set('password', sha1('Password01'));
+    $f3->set('title', 'Working with Templates');
+
+    //try it
+    $f3->set('color', 'purple');
+    $f3->set('radius', 10);
+    //array test
+    $f3->set('fruits', array('orange', ' banana', 'apple '));
+
+    //display a template
     $view = new Template();
     echo $view->render('views/home.html');
-
     //echo '<h1>Week5!</h1>';
+
+    //alternate syntax
+    //echo Template::instance()->render('views/info.html');
 }
 );
 
