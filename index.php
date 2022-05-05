@@ -26,6 +26,19 @@ $f3->route('GET /', function($f3)
     $f3->set('fruits', array('orange', ' banana', 'apple '));
     //associative array
     $f3->set('addresses', array('primary' => '1000 Summer Ln Auburn, WA 98002', 'secondary' => '2510 Apple Ln Seattle, WA 98999'));
+    //more array practice
+    $f3->set('desserts', array('strawberry'=>'Strawberry Shortcake', 'chocolate'=>'Chocolate Mousse', 'vanilla'=>'Vanilla Custard'));
+    //same thing broken up
+    $f3->set('chocolate', 'Chocolate Mousse');
+    $f3->set('vanilla', 'Vanilla Custard');
+    $f3->set('strawberry', 'Strawberry Shortcake');
+    //what repeat block is doing in html
+    //$desserts = array('strawberry'=>'Strawberry Shortcake', 'chocolate'=>'Chocolate Mousse', 'vanilla'=>'Vanilla Custard');
+    //foreach($desserts as $short=>$long)
+    //{
+    //    echo $short . " - " . $long;
+    //}
+
 
     //display a template
     $view = new Template();

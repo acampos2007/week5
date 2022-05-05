@@ -28,6 +28,16 @@
     <p>{{ @addresses['primary'] }}</p>
     <p>{{ @addresses['secondary'] }}</p>
 
+    <h3>Dessert Options</h3>
+    <repeat group="{{ @desserts }}" key="{{ @short }}" value="{{ @long }}">
+        <label><input type="checkbox" value="{{ @short }}"> {{ @long }}</label><br>
+    </repeat>
+
+    <h3>Dessert Options</h3>
+    <label><input type="checkbox" value="chocolate">Chocolate Mousse</label><br>
+    <label><input type="checkbox" value="vanilla">Vanilla Custard</label><br>
+    <label><input type="checkbox" value="strawberry">Strawberry Shortcake</label><br>
+
 </div>
 
 
